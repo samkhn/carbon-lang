@@ -62,14 +62,12 @@ def _build_generated_files(bazel: str, logtostderr: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generates compilation data used by clangd.",
+        description=__doc__,
         allow_abbrev=False,
     )
     parser.add_argument(
         "--alsologtostderr",
         action="store_true",
-        # type=bool,
-        default=False,
         help="Prints subcommand errors to stderr (default: False)",
     )
 
