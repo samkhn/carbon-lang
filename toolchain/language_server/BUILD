@@ -31,6 +31,7 @@ cc_library(
     hdrs = ["context.h"],
     deps = [
         "//common:map",
+        "//toolchain/diagnostics:diagnostic_emitter",
     ],
 )
 
@@ -60,6 +61,8 @@ cc_library(
         ":handle",
         "//common:check",
         "//common:map",
+        "//common:ostream",
+        "//common:raw_string_ostream",
         "@llvm-project//clang-tools-extra/clangd:ClangDaemon",
     ],
 )
