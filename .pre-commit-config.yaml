@@ -209,6 +209,11 @@ repos:
           - '" '
           - ''
           - --custom_format
+          - '\.el$'
+          - ''
+          - ';;; '
+          - ''
+          - --custom_format
           - '\.scm$'
           - ''
           - '; '
